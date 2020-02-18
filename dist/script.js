@@ -1,1 +1,1 @@
-"use strict";
+"use strict";!function(){var e=document.querySelector("header");window.onscroll=function(){50<window.pageYOffset?e.classList.add("active"):e.classList.remove("active")}}();

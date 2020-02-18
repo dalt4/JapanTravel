@@ -19,27 +19,13 @@ gulp.task('img', () =>
         .pipe(gulp.dest('dist/img'))
 );
 
-gulp.task('cards', () =>
-    gulp.src('app/img/cards/*')
+gulp.task('svg', () =>
+    gulp.src('app/img/svg/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img/cards/'))
+        .pipe(gulp.dest('dist/img/svg/'))
 );
 
-gulp.task('oracle', () =>
-    gulp.src('app/img/oracle/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/img/oracle/'))
-);
-
-gulp.task('story', () =>
-    gulp.src('app/img/story/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/img/story/'))
-);
-
-
-gulp.task('image', gulp.parallel('img', 'cards', 'oracle', 'story'));
-
+gulp.task('image', gulp.parallel('img', 'svg'));
 
 //----------------------gulp build------------------------//
 
