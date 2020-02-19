@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "landingpage for portfolio",
   "main": "index.html",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "node-sass": "^4.13.1",
