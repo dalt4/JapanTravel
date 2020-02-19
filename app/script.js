@@ -15,13 +15,22 @@
     const burger = document.querySelector('.header__burger');
     const header_nav = document.querySelector('.header__nav');
     const header_nav_close = document.querySelector('.header__nav-close');
+    const menu_link = document.querySelectorAll('.header__link');
 
     burger.addEventListener('click', () => {
         header_nav.classList.add('active')
     });
     header_nav_close.addEventListener('click', () => {
         header_nav.classList.remove('active')
-    })
+    });
+
+    if (window.innerWidth <= 767) {
+        menu_link.forEach(item => {
+            item.addEventListener('click', () => {
+                header_nav.classList.remove('active')
+            })
+        })
+    }
 })();
 
 // Scroll to anchors
